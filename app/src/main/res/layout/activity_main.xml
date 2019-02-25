@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dpc.administrator.duanxinmuban.MainActivity"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_muban"
+        android:hint="输入框内容将替换#address"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模板：亲爱的#name，你好，你们位于#address的甲醛超标了，考虑近期帮你做除甲醛处理！"
+        android:textSize="20dp"
+        android:id="@+id/tv_muban"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="联系人:"
+            android:textSize="20dp"
+            android:id="@+id/tv_lxr"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_weight="1.0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="点击选择联系人"
+            android:textSize="20dp"
+            android:id="@+id/tv_dh"
+            android:gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/btn_getcontact"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#303F9F"
+            android:text="选择联系人"
+            android:layout_gravity="right"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里显示生成后的短信内容"
+        android:textSize="20dp"
+        android:id="@+id/tv_dx"
+        />
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_send"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#303F9F"
+        android:text="发送短信"
+        android:layout_gravity="right"
+        />
+
+
+
+
+
+</LinearLayout>
